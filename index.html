@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas CSS | Part 1</title>
+    <style>
+        #judul {
+            color: salmon;
+            font-size: 50px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .h2 {
+            color: pink;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+        }
+
+        .link {
+            color: palevioletred;
+            font-size: 20px;
+        }
+
+        h1,
+        h2 {
+            background-color: antiquewhite;
+        }
+
+        /* div p {
+            color: salmon;
+        } */
+        /* div>p {
+            color: salmon;
+        } */
+        /* div+p {
+            color: salmon;
+        } */
+        /* div~p {
+            color: salmon;
+        } */
+        a[target] {
+            color: red
+        }
+
+        /* p[title~="seru"] {
+            color: salmon;
+        } */
+        /* p[title|="seru"] {
+            color: salmon;
+        } */
+        /* p[title^="seru"] {
+            color: salmon;
+        } */
+        /* p[title$="seru"] {
+            color: salmon;
+        } */
+        p[title*="seru"] {
+            color: salmon;
+        }
+
+        /* .article[title*="seru"] {
+            color: salmon;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1 id="judul">Tugas CSS | Part 1</h1>
+
+    <h2 class="h2">CSS adalah bahasa yang digunakan dalam coding untuk menciptakan visual dari bahasa markup seperti
+        HTML</h2>
+
+    <a class="link" href="http://css-tricks.com/almanac/selector/d/descendant/" target="_self" title="">ini link</a>
+    <br><br>
+    <div>
+        <article>
+            <p>tidak pilih css</p>
+        </article>
+        <p>tidak pilih css</p>
+    </div>
+    <p>pilih css</p>
+    <p>pilih css</p>
+    <a href="#" target="">ini link</a>
+    <a href="#" target="_blank">ini link</a>
+    <p title="seru">pilih css</p>
+    <p title="serucss\">pilih css</p>
+    <p title="seru ">pilih css</p>
+    <p title="css-seru">pilih css</p>
+    <p title="css seru">pilih css</p>
+
+
+</body>
+
+</html>
