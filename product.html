@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 260px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            font-size: 14px;
+            position: relative;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.30);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: pink;
+            color: brown;
+            font-size: 12px;
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+
+        .product {
+            font-size: 16px;
+            font-weight: bold;
+            color: brown;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: brown;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: pink;
+            font-size: 14px;
+        }
+
+        .discount {
+            background-color: pink;
+            color: brown;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .discount:hover {
+            transform: scale(1.20);
+        }
+
+        .location,
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .location img,
+        .rating img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .location p {
+            color: brown;
+        }
+
+        .rating span {
+            margin-left: 5px;
+            color: #fbc02d;
+        }
+
+        .rating p {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="title"><b>Beli Lokal</b></div>
+        <img src="liptint.jpeg" alt="Kopi Gayo">
+        <div class="content">
+            <h3 class="product">RHODE LIP TINT</h3>
+            <p class="price">Rp425.000<div class="original-price">Rp450.000</div></p>
+            <div class="discount">Diskon 5,56%</div>
+
+            <div class="location">
+                <img src="location.jpeg" alt="Location icon"><p>Kota Sumedang</p>
+            </div>
+
+            <div class="rating">
+                <img src="star.jpeg" alt="Rating icon">
+                <span>5.0</span> <p><b>| 500+ terjual</b></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
